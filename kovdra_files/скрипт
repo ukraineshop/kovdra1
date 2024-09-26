@@ -1,0 +1,45 @@
+
+ <script>
+  document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('order_form').addEventListener('submit', function(e) {
+          e.preventDefault(); // Запобігаємо стандартній відправці форми
+       
+          // Отримуємо значення полів форми
+          var name = document.querySelector('input[name="name"]').value;
+          var phone = document.querySelector('input[name="phone"]').value;
+          var city= document.querySelector('input[name="city"]').value;
+          var np = document.querySelector('input[name="np"]').value;
+          
+       
+          // Формуємо повідомлення
+          var message = `Нове замовлення:\nІм'я та прізвище: ${name} \nТелефон: ${phone}: \nМісто: ${city}:  \nНова пошта ${np};`
+       
+          // Ваш токен та ID чату
+          var token = '7118339670:AAG5l4DJcCEhpg1d5-RkJ5o1Pl-xbUSjPGo';
+          var chatId = 978449035; // Замініть YOUR_CHAT_ID на ваш реальний ID чату
+       
+          // Відправляємо повідомлення через Telegram API
+          fetch('https://api.telegram.org/bot' + token + '/sendMessage', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({
+                  chat_id: chatId,
+                  text: message,
+                  parse_mode: "Markdown"
+              })
+          })
+          .then(response => response.json())
+          .then(data => {
+              console.log('Success:', data);
+              // Після успішної відправки, одразу перенаправляємо на сторінку "Дякую"
+              window.location.href = "./kovdra_files/thank_you_page.html"; 
+          })
+          .catch((error) => {
+              console.error('Error:', error);
+              alert('Помилка при відправленні замовлення.');
+          });
+      });
+  });
+</script>

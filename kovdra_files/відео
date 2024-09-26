@@ -1,0 +1,6 @@
+ <center>
+          <video controls="" loop="" muted="" width="380" playsinline="">
+            <!-- <source type="video/webm" src="site/img/vid.png" /> -->
+            <source type="video/mp4" src="./site/img/vid.mp4">
+          </video>
+        </center>

@@ -1,0 +1,60 @@
+ <h2 class="title">типорозміри <span>4 СЕЗОНИ</span></h2>
+        <div class="counst">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <p><b>Розмiр: 155х210 см:</b></p>
+                </td>
+                <td>
+                  <p>
+                    <span style="
+                        color: #777575;
+                        text-decoration: line-through;
+                        font-weight: 600;
+                      ">1800 грн</span>&nbsp;&nbsp;<span style="
+                        color: #39b54a;
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                      ">900 грн</span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p><b>Розмiр: 175х210 см:</b></p>
+                </td>
+                <td>
+                    <p>
+                      <span style="
+                          color: #777575;
+                          text-decoration: line-through;
+                          font-weight: 600;
+                        ">2000 грн</span>&nbsp;&nbsp;<span style="
+                          color: #39b54a;
+                          font-size: 1.5rem;
+                          font-weight: 700;
+                        ">1000 грн</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><b>Розмiр: 200х220 см:</b></p>
+                  </td>
+                  <td>
+                    <p>
+                      <span style="
+                          color: #777575;
+                          text-decoration: line-through;
+                          font-weight: 600;
+                        ">2200 грн</span>&nbsp;&nbsp;<span style="
+                          color: #39b54a;
+                          font-size: 1.5rem;
+                          font-weight: 700;
+                        ">1100 грн</span>
+                    </p>
+                  </td>
+                </tr>
+            </tbody>
+          </table>
