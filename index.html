@@ -437,9 +437,7 @@
               </select>
             </div>
             
-            <input type="hidden" name="product_name" id="product_name" value="Полуторний 155*210">
-            <input type="hidden" name="product_id" id="product_id" value="243">
-            <input type="hidden" name="price" id="price" value="900">
+          
             <button class="button-m">замовити зараз</button>
           </form>
           <div class="prod_count">
@@ -490,19 +488,7 @@
     <script>
       $('select').change(function () {
         var value = $(this).val();
-        var form = $(this).closest('form');
-        if (value == 'Полуторний') {
-          form.find('input[name=product_name]').val('Полуторний 155*210');
-          form.find('input[name=price]').val('900');
-          $('#product_id').val('243');
-        } else if (value == 'Двоспальний') {
-          form.find('input[name=product_name]').val('Двоспальний 175*210');
-          form.find('input[name=price]').val('1000');
-          $('#product_id').val('244');
-        } else if (value == 'Євро') {
-          form.find('input[name=product_name]').val('Євро 200*220');
-          form.find('input[name=price]').val('1100');
-          $('#product_id').val('245');
+      
         }
       });
     </script>
