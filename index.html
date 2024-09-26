@@ -431,8 +431,8 @@
             <div>
               <label for="validationTextarea" class="form-label">Оберіть розмір ковдри<span class="text-primary">*</span></label>
               <select id="rozmir" name="offer" value="" class="form-control" required="true">
-                <option value="Полуторний">Розмір 220х240 см -1599 грн </option>
-                <option value="Двоспальний">З комплектом подушок 2299 грн</option>
+                <option value="Розмір 220х240 см -1599 грн">Розмір 220х240 см -1599 грн </option>
+                <option value="З комплектом подушок 2299 грн">З комплектом подушок 2299 грн</option>
                 
               </select>
             </div>
@@ -475,16 +475,7 @@
     <script defer="" src="./kovdra_files/previewYouTube.js.завантаження"></script>
 
     <script src="./kovdra_files/jquery.js.завантаження"></script>
-    <script>
-      jQuery(function ($) {
-        $('a[href^="/#"]').click(function (e) {
-          e.preventDefault();
-          var _href = $(this).attr('href').slice(1);
-          $('html, body').animate({ scrollTop: $(_href).offset().top + 'px' });
-          return false;
-        });
-      });
-    </script>
+   
     <script>
       $('select').change(function () {
         var value = $(this).val();
@@ -494,6 +485,6 @@
     </script>
 
   
-     <script> (function(){ for (var i = 0, forms = document.forms; i < forms.length; i++) { (function(form){ form.addEventListener('submit', function() { var tzoffset = (new Date()).getTimezoneOffset() * 60000; var localISOTime = (new Date(Date.now() - tzoffset)).toISOString(); var splitted = localISOTime.split('T'); var localTime = splitted[0] + ' ' + splitted[1].substr(0, 8); var fields = [ '<input type="hidden" name="_time" value="' + localTime + '">', '<input type="hidden" name="_utm_medium" value="">', '<input type="hidden" name="_utm_source" value="">', '<input type="hidden" name="_utm_campaign" value="">', '<input type="hidden" name="_utm_term" value="">', '<input type="hidden" name="_utm_content" value="">', ]; form.insertAdjacentHTML('beforeend', fields.join('')); return true; }) })(forms[i]); } })(); </script> <script> setTimeout(function(){ fbq('track', 'ViewContent'); },10000) </script>  
+ <script> (function(){ for (var i = 0, forms = document.forms; i < forms.length; i++) { (function(form){ form.addEventListener('submit', function() { var tzoffset = (new Date()).getTimezoneOffset() * 60000; var localISOTime = (new Date(Date.now() - tzoffset)).toISOString(); var splitted = localISOTime.split('T'); var localTime = splitted[0] + ' ' + splitted[1].substr(0, 8); var fields = [ '<input type="hidden" name="_time" value="' + localTime + '">', '<input type="hidden" name="_utm_medium" value="">', '<input type="hidden" name="_utm_source" value="">', '<input type="hidden" name="_utm_campaign" value="">', '<input type="hidden" name="_utm_term" value="">', '<input type="hidden" name="_utm_content" value="">', ]; form.insertAdjacentHTML('beforeend', fields.join('')); return true; }) })(forms[i]); } })(); </script> <script> setTimeout(function(){ fbq('track', 'ViewContent'); },10000) </script>  
 
 </body></html>
